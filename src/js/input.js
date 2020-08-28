@@ -1,3 +1,5 @@
+import { closeModal } from './modal.js';
+
 const GO_UP = { x: 0, y: -1 };
 const GO_DOWN = { x: 0, y: 1 };
 const GO_LEFT = { x: -1, y: 0 };
@@ -35,6 +37,8 @@ window.addEventListener('keydown', event => {
     default:
       break;
   }
+
+  closeModal();
 });
 
 export function getInputDirection() {

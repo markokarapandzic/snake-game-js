@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  background-color: black;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.25);
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.1s ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+#game-board {
+  background-color: #CCC;
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+  background-color: hsl(200, 100%, 50%);
+  border: .25vmin solid black;
+}
+
+.food {
+  background-color: hsl(50, 100%, 50%);
+  border: .25vmin solid black;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 5px;
+  width: 30vw;
+  height: auto;
+  padding: 20px;
+  max-width: var(--modal-max-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.btn-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  background-color: #CCC;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.25);
+  transition: background-color 0.1s ease-in;
+}
+
+.btn-modal p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.btn-modal:hover {
+  background-color: #d9d9d9;
+}
+
+.result {
+  margin: 1rem 0;
+}
+
+.game-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-start {
+  background-color: #7ddf64;
+}
+
+.btn-start:hover {
+  background-color: #c4edd1;
+}
+
+/* Score Modal */
+.modal-score-overlay {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.score-modal-open {
+  visibility: visible;
+  z-index: 20;
+}
+
+.modal-score-container {
+  background-color: white;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding: 0 10px;
+  text-align: center;
+  position: relative;
+}
+
+.result {
+  margin: 0;
+}
+
+.result h2, h4 {
+  margin: 0;
+}
+
+.result h4 {
+  font-size: 20px;
+}
+
+.result h2 {
+  font-weight: 500;
+}
+
+.btn-restart {
+  background-color: #0077b6;
+}
+
+.btn-restart:hover {
+  background-color: #90e0ef;
+}

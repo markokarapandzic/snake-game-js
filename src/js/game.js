@@ -1,16 +1,21 @@
 import { getSnakeHead, snakeIntersection, update as updateSnake, paint as paintSnake, SNAKE_SPEED } from './snake.js';
 import { update as updateFood, paint as paintFood } from './food.js';
 import { outsideGrid } from './grid.js';
+import { gameOverModal, mobileScreenModal } from './modal.js';
+import { getScore } from './score.js';
 
 let lastRenderTime = 0;
 let gameOver = false;
 const gameBoard = document.getElementById('game-board');
 
 function main(currentTime) {
+  if (screen.width < 1140) {
+    mobileScreenModal();
+    return;
+  }
+
   if (gameOver) {
-    if (confirm('You lost. Press ok to restart.')) {
-      window.location = '/';
-    }
+    gameOverModal(getScore());
     return;
   }
 
@@ -22,7 +27,6 @@ function main(currentTime) {
   }
 
   lastRenderTime = currentTime;
-  console.log('Render');
 
   update();
   paint();
