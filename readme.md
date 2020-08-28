@@ -9,7 +9,7 @@
 
 ### INTRODUCTION
 
-Snake Game made with Vanilla JavaScript. Enables a user to play the game in their browser, so they can get score points as much as they can.
+Snake Game made with ES6 JavaScript. Enables a user to play the game in their browser, so they can get score points as much as they can.
 
 Check out a live version [here](https://markokarapandzic.github.io/portfolio-website/).
 
