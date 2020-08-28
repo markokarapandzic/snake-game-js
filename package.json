@@ -1,0 +1,19 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "Snake game made with Vanilla JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markokarapandzic/snake-game-js.git"
+  },
+  "author": "Marko Karapandzic",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/markokarapandzic/snake-game-js/issues"
+  },
+  "homepage": "https://github.com/markokarapandzic/snake-game-js#readme"
+}
