@@ -4,7 +4,8 @@
   "description": "Snake game made with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/markokarapandzic/snake-game-js/issues"
   },
-  "homepage": "https://github.com/markokarapandzic/snake-game-js#readme"
+  "homepage": "https://github.com/markokarapandzic/snake-game-js#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0"
+  }
 }
