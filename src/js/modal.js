@@ -1,5 +1,5 @@
 import { openModal as openScoreModal } from './score.js'
-import { restartModalHtml } from './constans.js'
+import { restartModalHtml, MOBILE_SCREEN_MODAL_HTML } from './constans.js'
 
 const modal = document.querySelector('.modal-overlay');
 const modalContent = document.querySelector('.modal-container');
@@ -27,3 +27,7 @@ export function gameOverModal(score) {
 btnStart.addEventListener('click', () => {
   closeModal();
 });
+
+export function mobileScreenModal() {
+  modalContent.innerHTML = MOBILE_SCREEN_MODAL_HTML;
+}

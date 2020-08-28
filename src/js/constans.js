@@ -9,3 +9,8 @@ export const restartModalHtml = (score) => `
   <button class="btn-restart">Restart</button>
 </div>
 `;
+
+export const MOBILE_SCREEN_MODAL_HTML = `
+<h1>Snake Game</h1>
+<h4>You cannot play this game on Mobile and Tablet Screens.</h4>
+`;
